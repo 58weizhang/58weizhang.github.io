@@ -1,0 +1,73 @@
+---
+layout:     post
+title:      "搭建博客及使用方法"
+subtitle:   "使用github搭建博客，用markdown语法写博客"
+date:       2016-07-19
+author:     "Gxd"
+header-img: "img/android/common_android_header.png"
+tags:
+    - 随笔
+    - 教程
+category: android
+
+---
+
+
+
+# 搭建博客
+我们选择在github上搭建博客，为什么？逼格高☺。   
+使用github搭建博客的好处：    
+
+1.	经常在github上逛，熟悉。  
+2.	有免费空间，提交代码方便。只需要commit，push。  
+3.	网站的管理交给github，我们只负责写文章，但是我们又有网站的控制权，可自定网站的样式等。  
+
+网上有很多的教程，如何在git上搭建博客，入门的教程可以参考：阮一峰的博客[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
+  
+##  github搭建网站的原理及流程。  
+
+###  搭建网站GitHub Pages
+GitHub提供了一种功能，叫**GitHub Pages**，利用这个功能，我们可以为项目建立网站。GitHub账号可以建立一个用户和多个组织，GitHub会给这个用户（或组织）分配一个域名：username.github.io，当用户访问这个域名时，GitHub会去解析username.github.io 项目的master分支，为你构建一个静态网站。username就是每个github用户的用户ID，只有这样名称的库才能被github用于构建网站。
+
+###  搭建网站流程
+1.	注册github账号，在github上简历仓库。
+![简历仓库]({{ site.url }}/img/android/creatblog_creat_github.jpeg)  
+这里需要注意简历仓库名称时，**需要与owner名称一致，以.io结尾**。这与上述描述一致。 
+2.	clone仓库  
+`git clone https://github.com/username/username.github.io`
+3.	进入目录，并添加index.html文件  
+`cd username.github.io`  
+`echo "Hello World" > index.html`
+4.	push到githu上。Add, commit, and push your changes:  
+`git add --all`    
+`~$git commit -m "Initial commit"`  
+`~$git push -u origin master`  
+
+**搭建完成，现在可以访问http://username.github.io**
+
+###  使用Jekyll建立博客
+Jekyll是什么？Jekyll（发音/'dʒiːk əl/，"杰克尔"）<font color="red">是一个简单的博客形态的静态站点生产机器</font> 。它有一个模版目录，其中包含原始文本格式的文档，通过[Markdown](http://alfred-sun.github.io/blog/2015/01/10/markdown-syntax-documentation) （或者 Textile） 以及模板引擎  <font color="red"> Liquid</font> 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。**将纯文本转化为静态网站和博客。**这里不介绍如何在本地安装使用 Jekyll，如果想本地使用，请参考[官方文档](http://jekyll.bootcss.com/)和[Jekyll/Liquid API 语法文档](http://alfred-sun.github.io/blog/2015/01/10/jekyll-liquid-syntax-documentation/)。
+
+### 写博客
+1.  cd 到指定的目录
+2.  第一次需要执行git clone https://github.com/58weizhang/58weizhang.github.io.git
+3.  在_post文件夹里找到对应的分类目录（如android），里面开始添加博客，注意博客的文件名需要特定格式：<font color='red'>"年-月-日-文章标题.后缀名"</font>，图片放在<font color='red'>img</font>文件夹对应的分类目录如(android）。![img]({{ site.url }}/img/android/creatblog_directory_structure.png)  
+4.  每篇文章的头部，必须有一个[yaml](http://jekyll.bootcss.com/docs/frontmatter/)文件头，用来设置一些元数据。![yaml]({{ site.url }}/img/android/creatblog_yaml.png) 
+5.  写完文章,开始发布。发布需要使用git命令。  
+依次输入
+1)`git status` 查看当前目录所有还没有被git管理的文件和被git管理且被修改但还未提交(git commit)的文件。![img]({{ site.url }}/img/android/creatblog_git1.png)   
+2)`git add .` 把我们要提交的文件的信息添加到索引库中。  
+3)`git status `再次查看状态![img]({{ site.url }}/img/android/creatblog_git2.png)  
+4)`git commit -m"添加ios目录及博客模板"`![img]({{ site.url }}/img/android/creatblog_git3.png)  
+5)`git push` ,第一次需要输入用户名及密码![img]({{ site.url }}/img/android/creatblog_git4.png)，每次push代码前最好执行`git pull`，同步远程分支。  
+
+### 问题
+如何预览?1.安装markdown的编辑器。2.本地安装Jekyll。  
+上传图片？push到github，博客中可以这样写`![img]({{ site.url }}/img/xxx/xxx.png)  
+`  
+push代码超时。重复push。   
+博客如何写的好看？参照[有逼格的寫作](http://www.jianshu.com/p/617516fba267
+)
+
+
+
