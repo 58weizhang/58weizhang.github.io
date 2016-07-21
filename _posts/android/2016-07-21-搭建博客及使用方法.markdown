@@ -66,6 +66,8 @@ Jekyll是什么？Jekyll（发音/'dʒiːk əl/，"杰克尔"）<font color="red
 上传图片？push到github，博客中可以这样写`![img]({{ site.url }}/img/xxx/xxx.png)  
 `  
 push代码超时。重复push。   
+代码push到github，博客没有更新？看看你的账号是否验证了邮箱。   
+类别现阶段是写死的，只有5个类别，建立了5个类别的模板（android、ios、fe、qa、server）。   
 博客如何写的好看？参照[有逼格的寫作](http://www.jianshu.com/p/617516fba267
 )
 
