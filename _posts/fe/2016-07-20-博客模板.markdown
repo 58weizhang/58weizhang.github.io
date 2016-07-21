@@ -3,16 +3,17 @@ layout:     post
 title:      "博客模板"
 subtitle:   "博客模板"
 date:       2016-07-20
-author:     "Gxd"
-header-img: "img/ios/blog_template.png"
+author:     "gxd"
+header-img: "img/fe/fe_template.png"
 tags:
     - 模板
     - 教程
-category: ios
+category: fe
 
 ---
 
 
 # 模板
+
 
 
