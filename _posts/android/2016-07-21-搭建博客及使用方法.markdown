@@ -61,6 +61,11 @@ Jekyll是什么？Jekyll（发音/'dʒiːk əl/，"杰克尔"）<font color="red
 4)`git commit -m"添加ios目录及博客模板"`![img]({{ site.url }}/img/android/creatblog_git3.png)  
 5)`git push` ,第一次需要输入用户名及密码![img]({{ site.url }}/img/android/creatblog_git4.png)，每次push代码前最好执行`git pull`，同步远程分支。  
 
+
+###  更详细的git教程
+[git - 简易指南](http://www.bootcss.com/p/git-guide/)
+[pro git中文版](http://pan.baidu.com/s/1o6Hsets)
+
 ### 问题
 如何预览?1.安装markdown的编辑器。2.本地安装Jekyll。  
 上传图片？push到github，博客中可以这样写`![img]({{ site.url }}/img/xxx/xxx.png)  
