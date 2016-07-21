@@ -2,7 +2,7 @@
 layout:     post
 title:      "搭建博客及使用方法"
 subtitle:   "使用github搭建博客，用markdown语法写博客"
-date:       2016-07-19
+date:       2016-07-21
 author:     "Gxd"
 header-img: "img/android/common_android_header.png"
 tags:

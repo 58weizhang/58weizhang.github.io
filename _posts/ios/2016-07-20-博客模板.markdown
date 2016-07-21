@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "博客模板"
+title:      "ios博客模板"
 subtitle:   "博客模板"
 date:       2016-07-20
 author:     "Gxd"
